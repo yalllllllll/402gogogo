@@ -1,41 +1,124 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的個人頁面</title>
+    <title>Nakia Hart - Content Writer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            height: 100vh;
+            flex-direction: row;
+            background-color: #f5f5f5;
         }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
+
+        .left-section {
+            background-color: #ffffff;
+            width: 50%;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+
+        .right-section {
+            background-color: #a0c8b7;
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-section img {
+            width: 200px;
+            height: 200px;
             object-fit: cover;
+            border-radius: 50%;
         }
-        h1 {
-            color: #333;
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #0073e6;
+            margin-right: 10px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .download-btn {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            background-color: #005bb5;
+        }
+
+        h1, h2, p {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .pdf-links a {
+            text-decoration: none;
+            color: #0073e6;
+            margin-right: 10px;
+        }
+
+        .pdf-links a:hover {
+            text-decoration: underline;
+        }
+
+        .bio-section {
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="your-photo.jpg" alt="我的照片">
-        <h1>歡迎來到我的個人頁面</h1>
-        <p>這是我的簡單介紹。</p>
+
+    <div class="left-section">
+        <h1>Nakia Hart</h1>
+        <h2>Content Writer</h2>
+
+        <div class="contact-info">
+            <p><strong>Phone:</strong> 123-456-7890</p>
+            <p><strong>Email:</strong> <a href="mailto:info@mysite.com">info@mysite.com</a></p>
+            <p><strong>Address:</strong> San Francisco, CA</p>
+            <p>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            </p>
+        </div>
+
+        <div class="bio-section">
+            <p>Hello! I'm Nakia Hart, a passionate content writer with experience in creating engaging and informative content. I specialize in crafting articles, blog posts, and web copy that resonates with audiences. I love helping businesses tell their stories and connect with their customers through words.</p>
+        </div>
+
+        <div class="pdf-links">
+            <h3>Check out my work:</h3>
+            <a href="path-to-your-pdf1.pdf" target="_blank">Project 1</a>
+            <a href="path-to-your-pdf2.pdf" target="_blank">Project 2</a>
+            <a href="path-to-your-pdf3.pdf" target="_blank">Project 3</a>
+        </div>
+
+        <a href="path-to-your-cv.pdf" class="download-btn" target="_blank">Download CV</a>
     </div>
+
+    <div class="right-section">
+        <img src="your-photo.jpg" alt="Nakia Hart">
+    </div>
+
 </body>
 </html>
